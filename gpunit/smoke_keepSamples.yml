@@ -1,0 +1,13 @@
+name: keepSamples - smoke test
+description: runs keepSamples with example data
+module: keepSamples
+params:
+    gct.file: "ftp://gpftp.broadinstitute.org/gpunit/keepSamples_Achilles/input/Achilles_v3.3.8_FC.gct"
+    keeplist: "ftp://gpftp.broadinstitute.org/gpunit/keepSamples_Achilles/input/keeplist_v3.3.9.txt"
+    extension: "Achilles_v3.3.8"
+    
+assertions:
+    numFiles: 2
+        files:
+            "Achilles_v3.3.8.rnai.gct": !!null
+            "stdout.txt": !!null
