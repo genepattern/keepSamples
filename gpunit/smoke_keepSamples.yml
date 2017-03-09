@@ -7,7 +7,8 @@ params:
     extension: "Achilles_v3.3.8"
     
 assertions:
+    jobStatus: success
     numFiles: 2
-        files:
-            "Achilles_v3.3.8.rnai.gct": !!null
-            "stdout.txt": !!null
+    files:
+        "Achilles_v3.3.8.rnai.gct": !!null
+        "stdout.txt": !!null
